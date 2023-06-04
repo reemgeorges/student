@@ -10,11 +10,7 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th>Name</th>
-            <th>Action</th>
-        </tr>
-    </thead>
+
     <tbody>
         @foreach ($groups as $group)
             <tr>
@@ -31,5 +27,5 @@
     </tbody>
 </table>
 
-<form action="{{ route('groups.create') }}" method="POST">
+<a href="{{ route('groups.create') }}">Add group</a>
 

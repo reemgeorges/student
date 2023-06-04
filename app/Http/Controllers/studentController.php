@@ -32,7 +32,7 @@ class studentController extends Controller
         $courses =courses::all();
         $groups = group::all();
 
-        return view('students.create', compact('courses', 'groups'));
+        return view('students.add', compact('courses', 'groups'));
     }
 
     /**
